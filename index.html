@@ -15,9 +15,9 @@ https://storybook.js.org/-->
 	</head>
 	<body>
 		<section id="app">
-			<div :class="div1Selected?'demo isSelected':'demo'" @click="divSelected(1)">Mountain</div>
-			<div :class="div2Selected?'demo isSelected':'demo'" @click="divSelected(2)">Sky</div>
-			<div :class="div3Selected?'demo isSelected':'demo'" @click="divSelected(3)">Ocean</div
+			<div :class="{demo:true,isSelected:div1Selected}" @click="divSelected(1)">Mountain</div>
+			<div :class="{demo:true,isSelected:div2Selected}" @click="divSelected(2)">Sky</div>
+			<div :class="{demo:true,isSelected:div3Selected}" @click="divSelected(3)">Ocean</div
 		</section>
 		
 	</body>
